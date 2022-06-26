@@ -118,3 +118,8 @@ hist(diamonds$price)
 hist(diamonds$price,
      breaks = 150, col = "#00ff00")
 
+colors <- table(diamonds$color)
+colors
+barplot(colors, col = "#cc0000")
+
+rm(list=ls())
